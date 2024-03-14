@@ -20,9 +20,6 @@ Veja o projeto no ar no Github Pages [Neste Link](https://angelabressan.github.i
 - <img align="center" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 - <img align="center" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
 
-## ⚙ Licença
-
-Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
 
 ## 📋 Autor
 
