@@ -1,0 +1,46 @@
+/* Estilos para telas menores ou iguais a 768px */
+@media (max-width: 768px) {
+  /* Ajuste do layout principal */
+  .decodificador {
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+  }
+
+  /* Ajuste da seção principal da página */
+  .decodificador__pagina {
+    width: 100%;
+    margin: 10% 0;
+  }
+
+  /* Ajustes na seção relacionada à mensagem recebida */
+  .decodificador_mensagem_recebida {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ocultar imagem na seção relacionada à mensagem recebida */
+  .decodificador_mensagemencontrada_imagem {
+    display: none;
+  }
+
+  /* Ajustes de padding para elementos na seção relacionada à mensagem recebida */
+  .decodificador_nenhumamensagem_encontrada,
+  .decodificador_digiteo_texto {
+    padding: 5%;
+  }
+
+  /* Ajustes no rodapé */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5%;
+    font-size: 14px;
+  }
+}
+
+/* Estilos para telas menores ou iguais a 1200px */
+@media (max-width: 1200px) {
+  /* Adicione ajustes de layout aqui, se necessário */
+}
