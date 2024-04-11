@@ -1,6 +1,6 @@
-# 💻🚀 Desafio Oracle Programa ONE Alura - Decodificador de Texto
+# 💻🚀 Decodificador de Texto - Programa ONE Oracla Next Education
 
-- Projeto desenvolvido usando HTML5, CSS3 & JavaScript do desafio do Challenge Decodificador de Texto - Iniciante em Programação T6 do programa ONE da Oracle e Alura.
+- Projeto desenvolvido usando HTML5, CSS3 & JavaScript - Challenge Decodificador de Texto - T6 do programa ONE.
 
 ## 🚀 Layout do Figma
 
