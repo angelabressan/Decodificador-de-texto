@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./responsive/responsive.css">
+  <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <title>Decodificador de texto</title>
+</head>
+
+<body>
+  <header class="logo__alura">
+    <a class="logo__alura" href="https://www.alura.com.br" target="_blank">
+      <img src="Logo.svg" alt="Logo Alura">
+    </a>
+  </header>
+
+  <main class="decodificador">
+    <section class="decodificador__pagina">
+      <textarea
+        cols="50"
+        rows="10"
+        wrap="hard"
+        placeholder="Digite seu texto para criptografar"
+        class="decodificador_area_texto"></textarea>
+      <p class="error-message"></p>
+      <p class="decodificador__alerta">
+        <img src="alert-icon.png" class="decodificador_icone_alerta" />Apenas letras minúsculas e sem acento
+      </p>
+      <div class="decodificador__botoes">
+        <button class="decodificador_botoes_criptografar" onclick="criptografar()">
+          Criptografar
+        </button>
+        <button class="decodificador_botoes_descriptografar" onclick="descriptografar()">
+          Descriptografar
+        </button>
+      </div>
+    </section>
+
+    <div class="decodificador_mensagem_recebida">
+      <img src="High_quality_products_1_1.svg" class="decodificador_mensagemencontrada_imagem">
+      <h1 class="decodificador_nenhumamensagem_encontrada">Nenhuma mensagem encontrada</h1>
+      <p class="decodificador_digiteo_texto">
+        Digite um texto que você deseja criptografar ou descriptografar
+      </p>
+      <p class="decodificador_texto_pHidden" hidden></p>
+      <button class="decodificador_botao_copiar" hidden id="copy-btn" onclick="copyText()">Copiar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Angela Bressan - Projeto Challenge Oracle Next Education T6</p>
+    <div class="links">
+      <i class="bx bxl-linkedin-square"></i>
+      <a href="https://www.linkedin.com/in/angelagregorio" target="_blank">Me conecte no Linkedin</a>
+    </div>
+    <div class="links">
+      <i class="bx bxl-github"></i>
+      <a href="https://github.com/angelabressan" target="_blank">Siga o meu Github</a>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

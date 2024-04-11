@@ -1,0 +1,311 @@
+/* Estilos para telas menores ou iguais a 768px */
+@media (max-width: 768px) {
+    /* Ajuste do layout principal */
+    .decodificador {
+      flex-direction: column;
+      align-items: center;
+      margin: 5%;
+    }
+  
+    /* Ajuste da seção principal da página */
+    .decodificador__pagina {
+      width: 100%;
+      margin: 10% 0;
+    }
+  
+    /* Ajustes na seção relacionada à mensagem recebida */
+    .decodificador_mensagem_recebida {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Ocultar imagem na seção relacionada à mensagem recebida */
+    .decodificador_mensagemencontrada_imagem {
+      display: none;
+    }
+  
+    /* Ajustes de padding para elementos na seção relacionada à mensagem recebida */
+    .decodificador_nenhumamensagem_encontrada,
+    .decodificador_digiteo_texto,
+    .decodificador_texto_pHidden {
+      padding: 5%;
+    }
+  
+    /* Ajustes no rodapé */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 5%;
+      font-size: 14px;
+      color: var(--cor-secundaria);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+  
+  /* Estilos para telas menores ou iguais a 576px */
+  @media (max-width: 576px) {
+    /* Adicione estilos específicos para telas menores ou iguais a 576px aqui */
+    .decodificador__pagina {
+      margin: 5% 0;
+    }
+  }
+  
+  /* Estilos para telas maiores que 768px */
+  @media (min-width: 769px) {
+    /* Adicione estilos específicos para telas maiores que 768px aqui */
+  }
+  
+  /* Estilos gerais */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  :root {
+    --cor-primaria: #DCF2F1;
+    --cor-secundaria: #0F1035;
+    --cor-hover: #1d1d32;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('./responsive/planodefundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  /* Estilos para o cabeçalho */
+  .logo__alura {
+    margin: 1% 3%;
+    text-decoration: none;
+  }
+  
+  /* Estilos para o contêiner principal */
+  .decodificador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 0% 0% 0%;
+    flex-grow: 1;
+    min-height: 80vh;
+  }
+  
+  /* Estilos para a seção principal */
+  .decodificador__pagina {
+    height: auto;
+    width: 100%;
+    margin: 0% 8%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilos para a área de texto */
+  .decodificador_area_texto {
+    background-color: var(--cor-secundaria);
+    height: 100%;
+    width: 100%;
+    color: var(--cor-primaria);
+    border: 5px solid;
+    border-radius: 14px;
+    border-color: var(--cor-primaria);
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    line-height: 150%;
+    overflow-x: hidden;
+    resize: none;
+    outline: none;
+    margin-bottom: 20px;
+    padding-left: 2px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .decodificador_area_texto::placeholder {
+    color: var(--cor-primaria);
+    font-size: 30px;
+    height: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165%;
+    padding-left: 2px;
+  }
+  
+  /* Estilos para a mensagem de alerta */
+  .decodificador__alerta {
+    margin-top: auto;
+    font-size: 20px;
+    color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+  }
+  
+  .decodificador_icone_alerta {
+    margin-right: 8px;
+    font-size: 0.9rem;
+  }
+  
+  /* Estilos para os botões */
+  .decodificador__botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 1% 0;
+  }
+  
+  .decodificador_botoes_criptografar {
+    width: 50%;
+    padding: 24px;
+    border-radius: 14px;
+    border: 5px solid;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .decodificador_botoes_criptografar:hover {
+    background-color: var(--cor-hover);
+  }
+  
+  .decodificador_botoes_descriptografar {
+    width: 50%;
+    padding: 24px;
+    border: 5px solid;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border-radius: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .decodificador_botoes_descriptografar:hover {
+    background-color: var(--cor-hover);
+  }
+  
+  /* Estilos para a mensagem recebida */
+  .decodificador_mensagem_recebida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 16px;
+    width: 400px;
+    height: auto;
+    margin-right: 2%;
+    padding: 1% 1%;
+    position: relative;
+  }
+  
+  .decodificador_mensagemencontrada_imagem {
+    width: auto;
+    height: 400px;
+    padding-bottom: 5px;
+  }
+  
+  .decodificador_nenhumamensagem_encontrada,
+  .decodificador_digiteo_texto {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .decodificador_digiteo_texto {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+  }
+  
+  .decodificador_nenhumamensagem_encontrada {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 550;
+    line-height: 150%;
+  }
+  
+  .decodificador_texto_pHidden {
+    text-align: center;
+    align-items: flex-start;
+    margin-bottom: auto;
+    order: -1;
+    padding: 3%;
+    color: var(--cor-secundaria);
+    font-size: 28px;
+    width: 100%;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .decodificador_botao_copiar {
+    border: 5px solid var(--cor-primaria);
+    bottom: 1px;
+    padding: 20px;
+    width: 100%;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border-radius: 14px;
+    margin-top: auto;
+    font-size: 20px;
+    font-weight: 500;
+    
+  }
+  
+  /* Footer - Rodapé da página */
+  footer {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    margin-top: 35px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    margin-top: 35px;
+  }
+  
+  footer p {
+    color: var(--cor-primaria);
+    font-size: 30px;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .links {
+    color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .links a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    margin-bottom: 20px;
+    
+  }
+  
+  a {
+    color: var(--cor-primaria);
+    font-size: 26px;
+  }
+  
+  .links i {
+    font-size: 30px;
+    color: var(--cor-primaria);
+    transition: all 0.5s ease-in-out;
+  }
+  
