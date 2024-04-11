@@ -1,4 +1,4 @@
-# 💻🚀 Decodificador de Texto - Programa Oracle ONE Next Education
+# 💻🚀 Challenge Decodificador de Texto | Programa Oracle ONE Next Education
 
 - Projeto desenvolvido usando HTML5, CSS3 & JavaScript - Challenge Decodificador de Texto - T6 do programa ONE.
 
