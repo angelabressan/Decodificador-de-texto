@@ -8,7 +8,7 @@ Veja aqui o layout do desafio [Neste Link](https://www.figma.com/file/tvFEYhVfZT
 
 ## 🔗 Link do deploy 
 
-Veja o projeto no ar [(https://decodficador-de-texto.vercel.app/)]
+Veja o projeto no ar [Neste Link](https://decodficador-de-texto.vercel.app/)
 
 ## 💻 Demonstração
 
